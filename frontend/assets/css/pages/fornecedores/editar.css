@@ -1,0 +1,165 @@
+@import '../../global/global.css';
+@import '../../pages/veterinario/cadastrar.css';
+
+.main-container {
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.grid-container {
+    grid-column: span 3;
+    display: grid;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.text-title h1 {
+    font-size: 22px;
+    font-weight: 450;
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    color: var(--cor-cinza);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2px;
+    font-size: 16px;
+
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F7;
+    outline: 0;
+    border-bottom: 1px solid var(--cor-cinza);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin:0;
+}
+
+.section-top {
+    background-color: #F5F5F7;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+
+#nome,
+#email {
+    width: 860px;
+}
+
+.display-flex {
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+#crmv,
+#telefone {
+    width: 290px;
+    margin-right: 15px;
+}
+
+.section-bottom {
+    background-color: #F5F5F7;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.section button {
+    background-color: var(--cor-menu);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+button {
+    width: 350px;
+}
+
+.section button:hover {
+    background: #3a3944;
+}
+
+.section-buttom {
+    justify-content: space-between;
+}
+
+/* Estilos para mensagens de erro */
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: none;
+    font-weight: 500;
+}
+
+/* Ajuste para o container do CRMV */
+.section-top div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section-top div input {
+    margin-bottom: 5px;
+}
+
+.section-top div .error-message {
+    order: 3;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* Ajuste para o container do telefone */
+.section-bottom div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section-bottom div input {
+    margin-bottom: 5px;
+}
+
+.section-bottom div .error-message {
+    order: 3;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}

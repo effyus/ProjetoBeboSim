@@ -1,0 +1,132 @@
+.animais-container {
+    padding: 20px;
+    margin-left: 200px;
+    max-width: 100%;
+    margin-right: 100px;
+}
+
+.page-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 450;
+    text-align: center;
+}
+
+.search-add-container {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.search-box {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px 15px;
+    height: 42px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    line-height: normal;
+}
+
+.btn-add {
+    height: 42px;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.btn-add:hover {
+    background-color: #218838;
+}
+
+.animais-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow-x: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.animais-table th,
+.animais-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.animais-table th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+    color: #555;
+}
+
+.animais-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.status-ativo {
+    color: #28a745;
+    font-weight: 500;
+}
+
+.status-inativo {
+    color: #dc3545;
+    font-weight: 500;
+}
+
+.btn-editar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+.btn-editar:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .search-add-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box,
+    .btn-add {
+        width: 100%;
+    }
+
+    .animais-container {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 15px;
+    }
+
+    .animais-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

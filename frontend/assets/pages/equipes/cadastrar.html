@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>PetCare</title>
+    <link href="/assets/css/pages/animais/cadastrar.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="/assets/css/global/elements.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <main-header></main-header>
+    <div class="main-container">
+
+        <div class="grid-container">
+            <div class="text-title">
+                <h1>CADASTRAR ANIMAL</h1>
+            </div>
+
+            <form action="cadastrar.html" autocomplete="off" method="post" >
+                <div class="section">
+                    <div class="section-top">
+                        <div>
+                            <label for="nome">Nome *</label>
+                            <input id="nome" type="text">
+                        </div>
+                        <div>
+                            <label for="tutor_id">Tutor *</label>
+                            <input id="tutorSearch" list="tutoresList" placeholder="Buscar tutor..." type="text">
+                            <datalist id="tutoresList">
+                                <!-- Options will be populated by JavaScript -->
+                            </datalist>
+                            <input id="tutor_id" type="hidden">
+                        </div>
+
+                        <div class="display-flex">
+                            <div>
+                                <label for="especie">Espécie *</label>
+                                <input id="especie" type="text">
+                            </div>
+                            <div>
+                                <label for="raca">Raça</label>
+                                <input id="raca" type="text">
+                            </div>
+                            <div>
+                                <label for="peso">Peso</label>
+                                <input id="peso" type="number">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="dataNascimento">Data de nascimento</label>
+                            <input id="dataNascimento" type="date">
+                        </div>
+                    </div>
+                    <div class="section-buttom">
+                        <div class="display-flex">
+                            <div class="button">
+                                <button type="submit">Gravar</button>
+                            </div>
+                            <div class="button">
+                                <button onclick="window.location.href='/animais/buscar'" type="button">Descartar alterações</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/assets/js/global/elements.js"></script>
+    <script src="/assets/js/pages/index/menu.js"></script>
+    <script src="/assets/js/pages/animais/cadastrar.js"></script>
+</body>
+
+</html>

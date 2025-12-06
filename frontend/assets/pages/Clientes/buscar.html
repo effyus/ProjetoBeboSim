@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>PetCare - Agendamentos</title>
+    <link href="/assets/css/pages/agendamento/agendamento.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="/assets/css/global/elements.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/pages/agendamento/buscar.css" media="screen" rel="stylesheet">
+    
+</head>
+
+<body>
+    <main-header></main-header>
+
+    <div class="agendamento-container">
+        <h1 class="page-title">AGENDAMENTOS</h1>
+
+        <div class="search-add-container">
+            <input class="search-box" placeholder="Buscar Agendamento..." type="text">
+            <button class="btn-add" onclick="window.location.href='cadastrar.html'">
+                <i class="bi bi-plus"></i> Adicionar Agendamento
+            </button>
+        </div>
+
+        <table class="agendamento-table">
+            <thead>
+                <tr>
+                    <th>Animal</th>
+                    <th>Veterinário</th>
+                    <th>Data</th>
+                    <th>Descrição</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="agendamentoTableBody"></tbody>
+        </table>
+    </div>
+
+    <script src="/assets/js/global/elements.js"></script>
+    <script src="/assets/js/pages/index/menu.js"></script>
+    <script src="/assets/js/pages/agendamento/buscar_agendamento.js"></script>
+</body>
+
+</html>

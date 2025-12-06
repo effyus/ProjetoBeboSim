@@ -1,0 +1,16 @@
+:root{
+    --cor-cinza: #c5c3c3;
+    --cor-preto: #000;
+    --cor-menu: #2A2C31;
+
+    --f1: clamp(1rem, 1vw, 1.2em);
+    --f2: clamp(2rem, 1vw, 2.2em);
+    --f3: clamp(3rem, 1vw, 3.2em);
+}
+
+/*exemplo de uso
+p {
+    color: var(--cor-preto);
+    font-size: var(--f1);
+}
+*/

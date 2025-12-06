@@ -1,0 +1,196 @@
+@import '../../global/global.css';
+@import '../../pages/atendimento/cadastrar.css';
+
+.main-container {
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.grid-container {
+    grid-column: span 3;
+    display: grid;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.text-title h1 {
+    font-size: 22px;
+    font-weight: 450;
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    color: var(--cor-cinza);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2px;
+    font-size: 16px;
+
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F7;
+    outline: 0;
+    border-bottom: 1px solid var(--cor-cinza);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.section-top {
+    background-color: #F5F5F7;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+
+#anamnese {
+    width: 860px;
+    padding: 1%;
+    margin-top: 2%;
+    padding: 1%;
+    font-size: 16px;
+}
+
+.display-flex {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#data {
+    width: 290px;
+    margin-right: 15px;
+    color: #333;
+    margin-top: 1%;
+    padding: 1%;
+    margin-bottom: 2%;
+    font-size: 16px;
+
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #F5F5F7;
+    font-size: 16px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+
+.section-bottom {
+    background-color: #F5F5F7;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+
+.section button {
+    background-color: var(--cor-menu);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+button {
+    width: 350px;
+}
+
+.section button:hover {
+    background: #3a3944;
+}
+
+.section-buttom {
+    justify-content: space-between;
+}
+
+.selects-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.custom-select-wrapper {
+    flex: 1;
+    min-width: 200px;
+    background-color: #f6f6f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.custom-select-wrapper label {
+    font-size: 16px;
+    color: var(--cor-cinza);
+    margin-bottom: 5px;
+    display: block;
+}
+
+.custom-select {
+    user-select: none;
+    position: relative;
+}
+
+.selected {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.options-container {
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height 0.3s ease;
+    border-bottom: 1px solid #ccc;
+}
+
+.custom-select.open .options-container {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.option {
+    padding: 10px;
+    cursor: pointer;
+    color: #333;
+}
+
+.option:hover {
+    background-color: #e0e0e0;
+}
